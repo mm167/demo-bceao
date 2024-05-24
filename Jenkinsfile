@@ -2,14 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Connect to GitHub') {
-            steps {
-                git (
-                    url: "https://github.com/mm167/demo-bceao.git",
-                    branch: "main"
-                )
-            }
-        }
 
         stage('Build Artifact'){
             steps {
